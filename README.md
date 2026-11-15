@@ -13,6 +13,14 @@ O **AuraCare IoT** é um protótipo de dispositivo vestível (*wearable*) desenv
 * **TCP/IP e Wi-Fi:** O ESP32 opera no modo *Station* (`WIFI_STA`) para conectar-se à rede local e acessar a Internet.
 * **MQTT (*Message Queuing Telemetry Transport*):** Protocolo de mensageria leve utilizado para comunicação remota. O dispositivo atua como *Publisher*, conectando-se ao broker público **HiveMQ** (`broker.hivemq.com`) na porta 1883 para publicar o payload de emergência.
 
+## Diagramas do Projeto
+
+**Esquema de Montagem Eletrônica:**
+![Diagrama de Montagem](Montagem.png)
+
+**Fluxograma do Algoritmo:**
+![Fluxograma do Software](Fluxograma.png)
+
 ## Como Reproduzir o Projeto (Instruções de Uso)
 O projeto foi validado utilizando a plataforma de prototipagem e simulação. Para reproduzi-lo:
 1. Monte o circuito conectando o MPU6050 aos pinos I2C, o LED ao pino 12 (com resistor) e o Buzzer ao pino 19 do ESP32.
